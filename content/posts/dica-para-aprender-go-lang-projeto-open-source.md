@@ -18,6 +18,8 @@ E foi para este curso que criei o **AprendaGo Progresso**.
 
 ![Demo da aplicação aprendago progresso](https://cdn.walissonaguirra.dev/rec_apregago_progresso.webp "Demo da aplicação AprendaGo Progresso - KDE Spectacle")
 
+Acesse a aplicação em: [https://walissonaguirra.github.io/aprendago-progresso/](https://walissonaguirra.github.io/aprendago-progresso/)
+
 Esta aplicação é um wrapper feito para organizar e registrar o progresso no curso AprendaGo. Um projeto Open Source, você pode ver o código fonte disponivel no [aqui](https://codeberg.org/walissonaguirra/aprendago-progresso).
 
 ---
@@ -38,7 +40,7 @@ Para minha surpresa, algumas pessoas começaram a demonstrar interesse no projet
 
 Conversando no grupo, surgiu a ideia de transformar este projeto em um PWA, removendo tudo que não era necessário.
 
-E é aqui que estamos: o Go Track Youtube foi recriado e republicado como AprendaGo Progresso, disponível online como um subdomínio do meu próprio site. Você pode acessá-lo em [aprendago.walissonaguirra.dev](http://aprendago.walissonaguirra.dev).
+E é aqui que estamos: o Go Track Youtube foi recriado e republicado como AprendaGo Progresso. 
 
 ## Qual é a finalidade?
 
