@@ -1,0 +1,51 @@
+baseURL = "https://walissonaguirra.dev/"
+languageCode = "pt-BR"
+title = "Walisson Aguirra"
+enableRobotsTXT = true
+
+[params]
+  description = "Engenheiro de software com foco em backend e arquitetura de aplicações, Go Lang e PHP"
+  author      = "Walisson Aguirra"
+  favicon     = "https://cdn.walissonaguirra.dev/favicon.ico"
+  # appleTouchIcon = "https://placehold.co/180x180/png?text=WA"
+  # image       = "https://placehold.co/1200x630/png?text=Walisson+Aguirra"
+  logo        = "https://cdn.walissonaguirra.dev/android-chrome-512x512.png"
+  rssURL      = "/index.xml"
+  sameAs = [
+    "https://codeberg.org/walissonaguirra",
+    "https://mastodon.social/@walissonaguirra",
+  ]
+
+[module]
+  [[module.imports]]
+    path = "codeberg.org/walissonaguirra/zero"
+
+[permalinks]
+  [permalinks.page]
+    posts = "/:year/:month/:day/:slug/"
+
+[menus]
+  [[menus.main]]
+    name = "Sobre"
+    url = "/sobre/"
+    weight = 1
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)'], ['$', '$']]
+  [markup.highlight]
+    style = 'github'
+    lineNos = true
+
+[minify]
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = false
