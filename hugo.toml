@@ -20,9 +20,6 @@ enableRobotsTXT = true
   [[module.imports]]
     path = "codeberg.org/walissonaguirra/zero"
 
-[permalinks]
-  [permalinks.page]
-    posts = "/:year/:month/:day/:slug/"
 
 [menus]
   [[menus.main]]
