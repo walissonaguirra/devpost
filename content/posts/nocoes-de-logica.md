@@ -8,13 +8,13 @@ tags: ["Estudo", "Matematica para computação"]
 ---
 
 ## Lógica Proposicional
-Este é a forma mais simples de lógica. Nela os fatos do mundo real são apresentados como sentenças bivalentes, que tambem pode ser chamado de Proposição.
+Esta é a forma mais simples de lógica. Nela os fatos do mundo real são apresentados como sentenças bivalentes, que também podem ser chamadas de Proposições.
 
 ## Proposição
-È uma sentença declarativa que só pode ser **verdadeira (V)** ou **falsa (F)**, mas nunca ambas ao mesmo tempo.
+É uma sentença declarativa que só pode ser **verdadeira (V)** ou **falsa (F)**, mas nunca ambas ao mesmo tempo.
 
 ## Proposição simples
-Não contem nenhum conectivo lógico e representa uma ideia única. (vamos fala mais sobre conectivos abaixo).
+Não contém nenhum conectivo lógico e representa uma ideia única. (vamos falar mais sobre conectivos abaixo).
 
 Exemplos:
 
@@ -43,7 +43,7 @@ Exemplos:
 | **F** | "**Não** é verdade que 2 é par." | $\sim p$ |
 
 ## Tabela verdade
-È uma forma de lista todas as combinações possíveis de valores lógicos (V ou F) de uma ou mais preposições e mostra o resultado para cada combinação.
+É uma forma de listar todas as combinações possíveis de valores lógicos (V ou F) de uma ou mais proposições e mostra o resultado para cada combinação.
 
 A regra é simples: para $n$ proposições, a tabela tem $2^n$ linhas. Com 1 proposição são 2 linhas, com 2 são 4, com 3 são 8, e assim por diante.
 
@@ -107,9 +107,9 @@ Só é **F** quando $p$ é verdadeiro e $q$ é falso. Lê-se como "se $p$, entã
 
 Exemplo: "**Se** chove, **então** o chão molha." Se chover e o chão não molhar, a afirmação é falsa. Nos outros casos, é verdadeira.
 
-Acho este conectivo bastante confuso quando explicado na teoria. talvez seja interessando ver exemplos praticos para
+Acho este conectivo bastante confuso quando explicado na teoria. Talvez seja interessante ver exemplos práticos para entender melhor.
 
-Pense assim: se a hipótese nem aconteceu ($p$), a promessa ($q$) não foi quebrada, então e resultado é **V**.
+Pense assim: se a hipótese nem aconteceu ($p$), a promessa ($q$) não foi quebrada, então o resultado é **V**.
 
 ### Bicondicional - $p \leftrightarrow q$ ("se e somente se")
 É **V** quando as duas proposições têm o **mesmo** valor lógico.
@@ -145,7 +145,7 @@ Os conectivos aparecem quase idênticos na maioria das linguagens:
 | $p \rightarrow q$ | `!p \|\| q` _(equivalente)_ |
 | $p \leftrightarrow q$ | `p == q`                |
 
-Exemplo em Go Lang:
+Exemplo em Go:
 
 ```go
 idade := 20
