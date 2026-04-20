@@ -2,4 +2,4 @@ module codeberg.org/walissonaguirra/devblog
 
 go 1.26.1
 
-require codeberg.org/walissonaguirra/zero v0.2.0 // indirect
+require codeberg.org/walissonaguirra/zero v0.2.1 // indirect
