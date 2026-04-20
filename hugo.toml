@@ -46,3 +46,6 @@ enableRobotsTXT = true
   [minify.tdewolff]
     [minify.tdewolff.html]
       keepWhitespace = false
+
+[services.disqus]
+  shortname = "walissonaguirra-dev"
