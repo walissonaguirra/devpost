@@ -20,7 +20,6 @@ enableRobotsTXT = true
   [[module.imports]]
     path = "codeberg.org/walissonaguirra/zero"
 
-
 [menus]
   [[menus.main]]
     name = "Sobre"
@@ -47,5 +46,15 @@ enableRobotsTXT = true
     [minify.tdewolff.html]
       keepWhitespace = false
 
-[services.disqus]
-  shortname = "walissonaguirra-dev"
+[params.giscus]
+  repo            = "walissonaguirra/devpost"
+  repoId          = "R_kgDOSHj-7g"          # obtenha em https://giscus.app/
+  category        = "Announcements"         # opcional
+  categoryId      = "DIC_kwDOSHj-7s4C7RLH"  # opcional, recomendado
+  mapping         = "title"									# pathname | url | title | og:title | specific | number
+  strict          = "0"											# "1" para exigir match estrito do título
+  reactionsEnabled = "1"
+  emitMetadata    = "0"
+  inputPosition   = "bottom"                # bottom | top
+  theme           = "light"
+  lang            = "pt"
