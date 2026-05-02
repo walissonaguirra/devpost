@@ -5,25 +5,23 @@ enableRobotsTXT = true
 
 [params]
   description = "Engenheiro de software com foco em backend e arquitetura de aplicações, Go Lang e PHP"
-  author      = "Walisson Aguirra"
-  favicon     = "https://cdn.walissonaguirra.dev/favicon.ico"
-  # appleTouchIcon = "https://placehold.co/180x180/png?text=WA"
-  # image       = "https://placehold.co/1200x630/png?text=Walisson+Aguirra"
-  logo        = "https://cdn.walissonaguirra.dev/android-chrome-512x512.png"
-  rssURL      = "/index.xml"
-  sameAs = [
-    "https://codeberg.org/walissonaguirra",
-    "https://mastodon.social/@walissonaguirra",
-  ]
+
+  [params.author]
+    author = "Walisson Aguirra"
+    email  = "walissonaguirra@proton.me"
+
+  [params.highlight.copy]
+    enable = true
+    display = "hover"
 
 [module]
   [[module.imports]]
-    path = "codeberg.org/walissonaguirra/zero"
+    path = "github.com/imfing/hextra"
 
-[menus]
-  [[menus.main]]
+[menu]
+  [[menu.main]]
     name = "Sobre"
-    url = "/sobre/"
+    pageRef = "/sobre"
     weight = 1
 
 [markup]
@@ -39,6 +37,8 @@ enableRobotsTXT = true
   [markup.highlight]
     style = 'github'
     lineNos = true
+    lineNumbersInTable = false
+    noClasses = false
 
 [minify]
   minifyOutput = true

@@ -2,4 +2,6 @@ module codeberg.org/walissonaguirra/devblog
 
 go 1.26.1
 
-require codeberg.org/walissonaguirra/zero v0.3.1 // indirect
+require (
+	github.com/imfing/hextra v0.12.2 // indirect
+)
