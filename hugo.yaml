@@ -1,0 +1,92 @@
+baseURL: https://walissonaguirra.dev/
+languageCode: pt
+defaultContentLanguage: pt
+title: Walisson Aguirra
+enableRobotsTXT: true
+
+cascade:
+  - _target: {}
+    toc: false
+    breadcrumbs: false
+
+params:
+  description: Engenheiro de software com foco em backend e arquitetura de aplicações, Go Lang e PHP
+  imageZoom:
+    enable: false
+
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: normal
+  
+  navbar:
+    displayTitle: true
+    displayLogo: false
+    width: normal
+
+  blog:
+    article:
+      displayPagination: false
+
+  footer:
+    displayCopyright: true
+
+  author:
+    author: Walisson Aguirra
+    email: walissonaguirra@proton.me
+
+  highlight:
+    copy:
+      enable: true
+      display: hover
+
+  giscus:
+    repo: walissonaguirra/devpost
+    repoId: R_kgDOSHj-7g          # obtenha em https://giscus.app/
+    category: Announcements       # opcional
+    categoryId: DIC_kwDOSHj-7s4C7RLH  # opcional, recomendado
+    mapping: title                # pathname | url | title | og:title | specific | number
+    strict: "0"                   # "1" para exigir match estrito do título
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: bottom         # bottom | top
+    theme: light
+    lang: pt
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+menu:
+  main:
+    - name: Sobre
+      pageRef: /sobre
+      weight: 1
+    # - name: Search
+    #   params:
+    #     type: search
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ['\[', '\]']
+            - ['$$', '$$']
+          inline:
+            - ['\(', '\)']
+            - ['$', '$']
+  highlight:
+    style: github
+    lineNos: true
+    lineNumbersInTable: false
+    noClasses: false
+
+minify:
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepWhitespace: false
