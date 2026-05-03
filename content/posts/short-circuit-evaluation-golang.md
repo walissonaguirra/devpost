@@ -2,11 +2,12 @@
 title = "Short Circuit Evaluation em Golang"
 date = 2026-04-19T21:00:00-03:00
 draft = false
+toc = false
 description = "Short Circuit Evaluation em Golang"
 tags = ["Golang"]
 +++
 
-Hoje, enquanto pesquisava referências para o meu post [Noções de Lógica]({{< ref "posts/nocoes-de-logica.md" >}}), acabei me deparando com um termo que ainda não conhecia: *Short Circuit Evaluation*.
+Hoje, enquanto pesquisava referências para o meu post [Noções de Lógica](#), acabei me deparando com um termo que ainda não conhecia: *Short Circuit Evaluation*.
 
 Ele descreve um comportamento simples: em uma expressão booleana composta, a linguagem para de avaliar assim que o resultado já está determinado.
 
@@ -14,7 +15,7 @@ Ok, vou exemplificar melhor.
 
 Abaixo tem um exemplo pratico onde cada expressão avaliada printa um indentificador na tela antes de retornar seu valor, assim vamos poder acompanhar o que está acontecendo.
 
-```go
+```go {filename="main.go"}
 package main
 
 import "fmt"
@@ -35,7 +36,7 @@ func testFunc(i int) bool {
 
 ...o que sempre resultará em:
 
-```
+```sh {filename="Terminal", lineNos=false}
 function 1 called
 function 1 called
 function 1 called
@@ -54,7 +55,7 @@ O operador lógico `||` (OU), só precisa que um dos lados seja verdadeiro para 
 
 Um exemplo do mundo real agora:
 
-```go
+```go {filename="main.go"}
 if user != nil && user.IsAdmin() {
     // user.IsAdmin() só é chamado se user != nil,
 }
@@ -68,12 +69,10 @@ ps:
 Em Visual Basic antigo o Short Circuit não acontecia. por exemplo, em `If a And b Then` ambos, `a` e `b`, serão avaliados.
 
 ps2: Em Java existe diferença entre operadores lógicos:
-```
-&& // short-circuit
-|| // short-circuit
-&  // avalia ambos (boolean também)
-|  // avalia ambos
-```
+> && // short-circuit <br/>
+> || // short-circuit <br/>
+> &  // avalia ambos (boolean também) <br/>
+> |  // avalia ambos
 
 **Finish!**
 

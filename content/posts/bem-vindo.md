@@ -6,7 +6,7 @@ description: "Post inaugural do dev blog: por que este espaço existe e o que es
 tags: ["meta", "blog"]
 ---
 
-**Hey! Obrigado por se interessar pelo meu dev blog.**
+##### Hey! Obrigado por se interessar pelo meu dev blog.
 
 Criei este espaço como uma forma de compartilhar alguns aprendizados e soluções de desafios técnicos que enfrento no dia a dia como programador.
 

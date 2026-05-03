@@ -2,14 +2,11 @@
 title = "Dica para aprender Go Lang, projeto open source"
 date = 2026-04-13T03:50:16-03:00
 draft = false
-toc = true
 description = "Apresentação do projeto AprendaGo Progresso, um pequeno projeto open source construido para facilitar o estudo de Go Lang"
 image = "https://cdn.walissonaguirra.dev/rec_apregago_progresso.webp"
 imageAlt = "Demo da aplicação AprendaGo Progresso"
 tags = ["go", "open-source", "aprendizado"]
 +++
-
-## Apresentação do projeto
 
 Há algum tempo, quando decidi aprender Go Lang, encontrei o curso Aprenda Go no YouTube. Sem dúvida, o melhor curso de Go em português.
 
@@ -64,7 +61,8 @@ Os módulos são:
 - `welcome.js` - o handler para o modal de boas-vindas exibido no primeiro acesso.
 
 A estrutura básica dos módulos da aplicação é esta:
-```sh
+```sh {filename="Terminal", lineNos=false}
+tree -L 2 .
 .
 ├── index.html        # página inicial
 ├── js                # modules
@@ -112,7 +110,7 @@ Outra parte interessante é o uso da estrategia de [Event Delegation](https://ww
 
 Isso significa que, renderizando 300 aulas ou 3, o custo em listeners é o mesmo. E, como o HTML é atualizado usando o `innerHTML`, não preciso me preocupar em re-anexar handlers depois de cada update.
 
-A primeira implementação que fim não estava assim, por isso achei importante destacar o uso de Event Delegation aqui. Fica a dica 😉.
+A primeira implementação que fiz não estava assim, por isso achei importante destacar o uso de Event Delegation aqui. Fica a dica 😉.
 
 ### Por que algumas coisas são como são?
 
