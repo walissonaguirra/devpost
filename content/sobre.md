@@ -1,9 +1,10 @@
 ---
 title: "Sobre"
 description: "Sobre Walisson Aguirra: engenheiro de software em Curitiba/PR, com foco em backend, Go Lang e PHP."
+hideTitle: true
 ---
 
-# Hey!
+### Hey!
 
 <div class="about-bio">
 <img class="about-ava" src="https://cdn.walissonaguirra.dev/walissonaguirra-100x100.jpg" alt="Walisson Aguirra" width="100" height="100">
