@@ -35,7 +35,7 @@ Abaixo estou listando todo o conteúdo que será estudado; conforme avanço, vou
 
 ### Noções de Lógica
 
-- [Noções de Lógica]({{< ref "posts/nocoes-de-logica.md" >}})
+- [Noções de Lógica](#)
 
 ### Conjuntos e Operações Básicas
 

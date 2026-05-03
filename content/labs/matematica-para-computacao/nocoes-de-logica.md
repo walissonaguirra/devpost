@@ -3,8 +3,10 @@ title: "Noções de Lógica"
 date: 2026-04-19T15:25:00-03:00
 draft: false
 description: "Anotações sobre lógica proposicional: proposições, conectivos, tabelas verdade e aplicações na programação."
-parent: "matematica-para-computacao"
 tags: ["Estudo", "Matematica para computação"]
+toc: false
+params:
+  breadcrumbs: false
 ---
 
 ## Lógica Proposicional
@@ -147,7 +149,7 @@ Os conectivos aparecem quase idênticos na maioria das linguagens:
 
 Exemplo em Go:
 
-```go
+```go {filename="main.go"}
 idade := 20
 temCarteira := true
 
@@ -163,7 +165,7 @@ Um detalhe importante: a maioria das linguagens avalia expressões booleanas com
 
 Isso é útil para evitar erros:
 
-```go
+```go {filename="main.go"}
 if usuario != nil && usuario.Ativo {
     // se usuario for nil, usuario.Ativo nem é avaliado
 }
