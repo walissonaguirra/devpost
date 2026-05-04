@@ -5,11 +5,6 @@
 <aside class="hextra-sidebar-container hx:flex hx:flex-col hx:print:hidden hx:md:top-16 hx:md:shrink-0 hx:md:w-64 hx:md:self-start hx:max-md:[transform:translate3d(0,-100%,0)] hx:md:sticky">
   <div class="hextra-scrollbar hx:overflow-y-auto hx:overflow-x-hidden hx:p-4 hx:grow hx:md:h-[calc(100vh-var(--navbar-height)-var(--menu-height))]">
     <ul class="hx:flex hx:flex-col hx:gap-1">
-      {{- $activeIndex := eq (strings.TrimSuffix "/" $pageURL) (strings.TrimSuffix "/" $section.RelPermalink) -}}
-      <li>
-        {{- template "labs-sidebar-link" (dict "active" $activeIndex "title" $section.Title "link" $section.RelPermalink) -}}
-      </li>
-
       {{- range $section.RegularPages.ByDate -}}
         {{- $active := eq (strings.TrimSuffix "/" $pageURL) (strings.TrimSuffix "/" .RelPermalink) -}}
         <li>
