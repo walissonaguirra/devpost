@@ -35,7 +35,7 @@ Abaixo estou listando todo o conteúdo que será estudado; conforme avanço, vou
 
 ### Noções de Lógica
 
-- [Noções de Lógica](#)
+- [Noções de Lógica]({{< relref "labs/matematica-para-computacao/nocoes-de-logica" >}})
 
 ### Conjuntos e Operações Básicas
 
