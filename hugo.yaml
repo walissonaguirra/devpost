@@ -6,8 +6,8 @@ enableRobotsTXT: true
 
 cascade:
   - _target: {}
-    toc: false
-    breadcrumbs: false
+    toc: true
+    breadcrumbs: true
 
 params:
   description: Engenheiro de software com foco em backend e arquitetura de aplicações, Go Lang e PHP
@@ -25,7 +25,7 @@ params:
 
   blog:
     article:
-      displayPagination: false
+      displayPagination: true
 
   footer:
     displayCopyright: true
@@ -58,9 +58,15 @@ module:
 
 menu:
   main:
+    - name: Posts
+      pageRef: /posts
+      weight: 1
+    - name: Labs
+      pageRef: /labs
+      weight: 2
     - name: Sobre
       pageRef: /sobre
-      weight: 1
+      weight: 3
     # - name: Search
     #   params:
     #     type: search
