@@ -4,9 +4,7 @@ date: 2026-04-19T15:25:00-03:00
 draft: false
 description: "Anotações sobre lógica proposicional: proposições, conectivos, tabelas verdade e aplicações na programação."
 tags: ["Estudo", "Matematica para computação"]
-toc: false
-params:
-  breadcrumbs: false
+weight: 1
 ---
 
 ## Lógica Proposicional

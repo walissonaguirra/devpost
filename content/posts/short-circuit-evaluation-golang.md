@@ -2,7 +2,6 @@
 title = "Short Circuit Evaluation em Golang"
 date = 2026-04-19T21:00:00-03:00
 draft = false
-toc = false
 description = "Short Circuit Evaluation em Golang"
 tags = ["Golang"]
 +++
