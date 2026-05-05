@@ -39,7 +39,7 @@ Abaixo estou listando todo o conteúdo que será estudado; conforme avanço, vou
 
 ### Conjuntos e Operações Básicas
 
-- Operações Fundamentais
+- [Operações Fundamentais]({{< relref "labs/matematica-para-computacao/conjuntos-e-operacoes-basicas/operacoes-fundamentais" >}})
 - Bases Numéricas
 - Números Primos
 - Números Inteiros, Frações e Números Racionais
