@@ -87,7 +87,7 @@ markup:
             - ['$', '$']
   highlight:
     style: github
-    lineNos: true
+    lineNos: false
     lineNumbersInTable: false
     noClasses: false
 
