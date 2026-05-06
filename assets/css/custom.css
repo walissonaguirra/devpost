@@ -23,3 +23,47 @@
 .about-bio .about-ava {
   max-width: 60px;
 }
+
+/* Indicador "Em andamento" para labs/posts em progresso */
+.lab-in-progress {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  margin-left: 0.5rem;
+  padding: 0.15em 0.7em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #166534;
+  background: #dcfce7;
+  border-radius: 9999px;
+  vertical-align: 0.15em;
+  white-space: nowrap;
+}
+
+.lab-in-progress::before {
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
+  animation: lab-in-progress-pulse 1.8s ease-out infinite;
+}
+
+@keyframes lab-in-progress-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+  70%  { box-shadow: 0 0 0 0.5em rgba(34, 197, 94, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+.dark .lab-in-progress {
+  color: #86efac;
+  background: rgba(34, 197, 94, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lab-in-progress::before {
+    animation: none;
+  }
+}

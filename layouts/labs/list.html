@@ -16,6 +16,9 @@
               <a href="{{ .RelPermalink }}" class="hx:inline-block hx:text-xl hx:underline hx:underline-offset-2 hx:decoration-from-font">
                 {{ .Title }}
               </a>
+              {{- if .Params.inProgress }}
+                <span class="lab-in-progress" title="Estou trabalhando neste lab agora">Em andamento</span>
+              {{- end }}
             </div>
           {{ end -}}
 

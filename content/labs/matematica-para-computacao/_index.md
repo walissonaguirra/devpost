@@ -4,6 +4,7 @@ date: 2026-04-18T15:00:00-03:00
 draft: false
 description: "Projeto pessoal de estudo de matemática aplicada à computação baseado no conteúdo do Hallison Paz."
 badge: "Mat. Computação"
+inProgress: true
 tags: ["Estudo", "Matematica"]
 ---
 
