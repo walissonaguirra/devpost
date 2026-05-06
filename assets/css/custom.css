@@ -1,33 +1,25 @@
-.content {
-  font-family: "Source Serif 4",charter,bitstream charter,georgia,cambria,times new roman,serif;
-  font-size: var(--hx-text-base);
-}
-
-.content .hextra-code-filename {
-  font-family: var(--hx-font-mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace);
-}
-
-#content h1 {
-  font-weight: 500;
+:root {
+  --hextra-max-navbar-width: 40rem;  
+  --hextra-max-page-width: 75rem;
+  --hextra-max-footer-width: 40rem; 
+  --hx-font-weight-semibold: 500;
+  --hx-font-weight-bold: 600;
+  --hx-font-sans: "Open Sans",ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 #content h1, h2, h3, h4, h5, h6 {
   font-family: var(--hx-default-font-family,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"); 
 }
 
-:root {
-  --hextra-max-navbar-width: 40rem;  
-  --hextra-max-page-width: 75rem;
-  --hextra-max-footer-width: 40rem; 
-  
-  --hx-font-sans: "Open Sans",ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  --hx-text-base: 1.1rem;
+.content {
+  font-family: "Source Serif 4",charter,bitstream charter,georgia,cambria,times new roman,serif;
 }
 
-article main > div.hx\:mb-16 {                                                                                                                             
-  font-size: var(--hx-text-base);       /* ou 0.95rem, 1.05rem, var(--hx-text-base)... */                                                                                 
+.content .hextra-code-filename {
+  font-family: var(--hx-font-mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace);
 }
 
+/* Sobre */
 .about-bio .about-ava {
   max-width: 60px;
 }
